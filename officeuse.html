@@ -1,0 +1,156 @@
+<html>
+<head>
+	<title>Official data insert</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+			   $(document).ready(function () {
+			   //Disable cut copy paste
+			  $('body').bind('cut copy paste', function (e) {
+				e.preventDefault();
+			   });
+		   
+			//Disable mouse right click
+			  $("body").on("contextmenu",function(e){
+				return false;
+			  });
+			  
+			   
+			  			  });
+
+		   </script>
+   <style type="text/css">
+  
+	<style>
+		.myClass
+		{
+			width: 500px;
+		}
+		
+		.parentName
+		{
+			width: 300px;
+		}
+		
+		textarea
+		{
+			width: 300px;
+			height: 100px;
+		}
+		
+		#add
+		{
+			border: 1px solid black;
+		}
+		
+		#stud
+		{
+			border-right: 1px solid black;
+		}
+		
+		
+	
+	</style>
+	
+	
+
+	
+	
+</head>
+<body>
+  
+	<center><h2>ONLY FOR OFFICE USE </h2></center>
+	<center><h3>STUDENT  REGISTRATION FORM</h3></center>
+	<center><h3>NATIONAL INSTITUTE OF TECHNOLOG :: SILCHAR </h3></center>
+  <marquee> <h4 style="margin-bottom:0px;margin-top:0px;"><font color="green" > officials data insertion</font></h4></marquee>
+	<hr>
+	
+	<div class="container">
+	
+		<form action="office_insert.php" method="post">
+		1)Name : <input type="text" name="name" class="myClass" required><br><br>
+		2)Category : 
+					<input type="radio" name="category" value="OP">OP
+					<input type="radio" name="category" value="SC">SC
+					<input type="radio" name="category" value="ST">ST
+					<input type="radio" name="category" value="OBC">OBC
+					<input type="radio" name="category" value="Gen">Gen
+					<input type="radio" name="category" value="PwD">PwD
+					<br><br>
+		3)Sex : 
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+				
+				<br><br>
+				
+		4)Registration No. :<input type="text" name="registration" required>
+				
+				<br><br>
+				
+		
+		5)Father's Name :<input type="text" name="father" required >
+				
+				<br><br>
+			
+		6)Mother's Name :<input type="text" name="mother" required>
+				
+				<br><br>
+		
+		7)Guardian's Name :<input type="text" name="guardian" required >
+				
+				<br><br>
+		
+		8)Date Of Birth :<input type="date" name="dob" required>
+				
+				<br><br>
+			
+		9)Blood Group :<input type="text" name="blood" required >
+				
+				<br><br>
+		
+		10)Mobile No. :<input type="text" name="mobile" required >
+		          <br><br>
+		11)E-mail. :<input type="text" name="email" required>
+				
+				<br><br>
+		
+		
+		
+		
+		12)Programme :
+					<input type="text" name="programme" required >
+					
+					<br><br>
+		
+		13)Date Of Joining : 
+					<input type="date" name="registerFor" placeholder="dateOfJoining" required> 
+		
+				<br><br>
+			
+		14)Branch : <input type="text" name="branch" required>
+				
+				<br><br>
+				
+		15)Religion : <input type="text" name="religion" required >
+		       <br><br>
+		16)Address : <input type="text" name="address" required >
+		
+				<br><br>
+	
+	
+			<center><input class="btn btn-primary" type="submit" name="submit1" value="Insert"></center>	
+			
+		</form>
+		
+
+		
+		</div>
+	
+	</div>
+	
+</body>
+</html>

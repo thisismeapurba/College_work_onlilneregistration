@@ -1,0 +1,430 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css"> 
+	<script type="text/javascript">
+			   $(document).ready(function () {
+			   //Disable cut copy paste
+			  $('body').bind('cut copy paste', function (e) {
+				e.preventDefault();
+			   });
+		   
+			//Disable mouse right click
+			  $("body").on("contextmenu",function(e){
+				return false;
+			  });
+			  
+			   
+			  			  });
+
+		   </script>
+	<title> Registration Page for College</title>
+	
+	<style>
+		.myClass
+		{
+			width: 500px;
+		}
+		
+		.parentName
+		{
+			width: 300px;
+		}
+		
+		textarea
+		{
+			width: 300px;
+			height: 100px;
+		}
+		
+		#add
+		{
+			border: 1px solid black;
+		}
+		
+		#stud
+		{
+			border-right: 1px solid black;
+		}
+	
+	</style>
+	
+</head>
+<body>
+	
+	<center><h2>U.G COURSE REGISTRATION FORM</h2></center>
+	<center><h3>NATIONAL INSTITUTE OF TECHNOLOG :: SILCHAR </h3></center>
+	<marquee> <h3 ><font color="red"> online registration portal</font></h3></marquee>
+	
+	<hr></hr>
+	
+	<div class="container">
+	
+		<form>
+		1)Name : <input type="text" class="myClass"><br><br>
+		2)Category : 
+					<input type="radio" name="category" value="OP">OP
+					<input type="radio" name="category" value="SC">SC
+					<input type="radio" name="category" value="ST">ST
+					<input type="radio" name="category" value="OBC">OBC
+					<input type="radio" name="category" value="Gen">Gen
+					<input type="radio" name="category" value="PwD">PwD
+					<input type="radio" name="category" value="OP">OP
+					<input type="radio" name="category" value="SC">SC
+					<input type="radio" name="category" value="ST">ST
+					<input type="radio" name="category" value="OBC">OBC
+			
+					<br><br>
+		3)Gender : 
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+				
+				<br><br>
+				
+		4)Registration No. :<input type="text" name="registration" >
+				
+				<br><br>
+		
+		5)Programme :
+					<input type="text" name="programme" >
+					
+					<br><br>
+		
+		6)To register for : 
+					<input type="text" name="registerFor" placeholder="Semester"> 
+		
+				<br><br>
+			
+		7)Session : <input type="text" name="session" >
+				
+				<br><br>
+				
+		8)Religion : <input type="text" name="religion" >
+		
+				<br><br>
+		
+		9)F Grade subject of earlier semesters, not cleared so far, if any:
+		
+				<br><br>
+				
+			<table class="table table-bordered table-hover table-condensed ">
+                <thead>
+					<tr class="danger">
+						<th>SI No.</th>
+						<th>Sem</th>
+						<th>Subjec Names</th>
+						<th>Subject Code</th>
+						<th>Credit Point</th>
+						<th>Core/Elective</th>
+					</tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>i</td>
+                        <td><input type="text" name="fsemi"></td>
+                        <td><input type="text" name="fsubjecti"></td>
+                        <td><input type="text" name="fsubjectcodei"></td>
+                        <td><input type="text" name="fcreditpointi"></td>
+                        <td><input type="text" name="core/electivei"></td>
+                    </tr>
+					
+					<tr>
+                        <td>ii</td>
+                        <td><input type="text" name="fsemii"></td>
+                        <td><input type="text" name="fsubjectii"></td>
+                        <td><input type="text" name="fsubjectcodeii"></td>
+                        <td><input type="text" name="fcreditpointii"></td>
+                        <td><input type="text" name="core/electiveii"></td>
+                    </tr>
+					
+					<tr>
+                        <td>iii</td>
+                       <td><input type="text" name="fsemiii"></td>
+                        <td><input type="text" name="fsubjectiii"></td>
+                        <td><input type="text" name="fsubjectcodeiii"></td>
+                        <td><input type="text" name="fcreditpointiii"></td>
+                        <td><input type="text" name="core/electiveiii"></td>
+                    </tr>
+					
+					<tr>
+                        <td>iv</td>
+                        <td><input type="text" name="fsemiv"></td>
+                        <td><input type="text" name="fsubjectiv"></td>
+                        <td><input type="text" name="fsubjectcodeiv"></td>
+                        <td><input type="text" name="fcreditpointiv"></td>
+                        <td><input type="text" name="core/electiveiv"></td>
+                    </tr>
+					
+					
+                </tbody>
+                
+            </table>
+			
+			<br><br>
+			
+			10)Regular Subjects of current semester to register as per syllabus: 
+			
+				<br><br>
+			
+			<table class="table table-bordered table-hover table-condensed ">
+                <thead>
+					<tr class="danger">
+						<th>SI No.</th>
+						<th>Subjec Names</th>
+						<th>Subject Code</th>
+						<th>Credit Point</th>
+						<th>Core/Elective</th>
+					</tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>i</td>
+                        <td><input type="text" name="rsubjecti"></td>
+                        <td><input type="text" name="rsubjectcodei"></td>
+                        <td><input type="text" name="rcreditpointi"></td>
+                        <td><input type="text" name="core/electivei"></td>
+                    </tr>
+					
+					<tr>
+                        <td>ii</td>
+                        <td><input type="text" name="rsubjectii"></td>
+                        <td><input type="text" name="rsubjectcodeii"></td>
+                        <td><input type="text" name="rcreditpointii"></td>
+                        <td><input type="text" name="core/electiveii"></td>
+                    </tr>
+					
+					<tr>
+                        <td>iii</td>
+                        <td><input type="text" name="rsubjectiii"></td>
+                        <td><input type="text" name="rsubjectcodeiii"></td>
+                        <td><input type="text" name="rcreditpointiii"></td>
+                        <td><input type="text" name="core/electiveiii"></td>
+                    </tr>
+					
+					<tr>
+                        <td>iv</td>
+                        <td><input type="text" name="rsubjectiv"></td>
+                        <td><input type="text" name="rsubjectcodeiv"></td>
+                        <td><input type="text" name="rcreditpointiv"></td>
+                        <td><input type="text" name="core/electiveiv"></td>
+                    </tr>
+					
+					
+					   <tr>
+                        <td>v</td>
+                        <td><input type="text" name="rsubjectv"></td>
+                        <td><input type="text" name="rsubjectcodev"></td>
+                        <td><input type="text" name="rcreditpointv"></td>
+                        <td><input type="text" name="core/electivev"></td>
+                    </tr>
+					
+					<tr>
+                        <td>vi</td>
+                        <td><input type="text" name="rsubjectvi"></td>
+                        <td><input type="text" name="rsubjectcodevi"></td>
+                        <td><input type="text" name="rcreditpointvi"></td>
+                        <td><input type="text" name="core/electivevi"></td>
+                    </tr>
+					
+					<tr>
+                        <td>vii</td>
+                        <td><input type="text" name="rsubjectvii"></td>
+                        <td><input type="text" name="rsubjectcodevii"></td>
+                        <td><input type="text" name="rcreditpointvii"></td>
+                        <td><input type="text" name="core/electivevii"></td>
+                    </tr>
+					
+					<tr>
+                        <td>viii</td>
+                        <td><input type="text" name="rsubjectviii"></td>
+                        <td><input type="text" name="rsubjectcodeviii"></td>
+                        <td><input type="text" name="rcreditpointviii"></td>
+                        <td><input type="text" name="core/electiveviii"></td>
+                    </tr>
+					
+					
+                </tbody>
+                
+            </table>
+			
+			<br><br>
+			
+			11)Extra load to be taken for back-log subjects(of col.9 above) with proper permission, if any:
+			
+				<br><br>
+				
+			<table class="table table-bordered table-hover table-condensed ">
+                <thead>
+					<tr class="danger">
+						<th>SI No.</th>
+						<th>Subjec Names</th>
+						<th>Subject Code</th>
+						<th>Credit Point</th>
+						<th>Core/Elective</th>
+					</tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>i</td>
+                        <td><input type="text" name="rsubjecti"></td>
+                        <td><input type="text" name="rsubjectcodei"></td>
+                        <td><input type="text" name="rcreditpointi"></td>
+                        <td><input type="text" name="core/electivei"></td>
+                    </tr>
+					
+					<tr>
+                        <td>ii</td>
+                        <td><input type="text" name="rsubjectii"></td>
+                        <td><input type="text" name="rsubjectcodeii"></td>
+                        <td><input type="text" name="rcreditpointii"></td>
+                        <td><input type="text" name="core/electiveii"></td>
+                    </tr>
+					
+					
+                </tbody>
+                
+            </table>
+			
+				<br><br>
+			
+			12)Total credit(10+11) : <input type="text" name="totalCredit">
+						<br><br>
+					
+			13) Full signature of the student : <input type="text" name="signature">
+				Date : <input type="date" name="date" >
+				
+					<br><br>
+			<hr>
+			
+				<h4>FOR FACULTY ADVISOR ONLYY </h4>
+				
+				Course Regn. permitted for : <input type="text" name="regn" >
+					<br><br>
+				Signature of faculty Advisor :<input type="text" name="faculty_signature">
+					Date : <input type="date" name="date">
+					
+					<br><br>
+			
+			<hr>
+				
+				<center><h4>PAYMENT DETAILS </h4></center>
+				
+			14)Registration fee Paid :
+				Rs. : <input type="text" name="fee1">
+				Receipt No. : <input type="text" name="receipt">
+				Date : <input type="date" name="date">
+			
+				<br><br>
+			15)Fee for extra load :
+				Rs.: <input type="text" name="extrafee">
+				<br><br>
+			16)Fine : <input type="text" name="fine">
+				<br><br>
+			
+			17)Any other fee : <input type="text" name="otherfine">
+				<br><br>
+			
+			18)Total Paid : <input type="text" name="totalPaid">
+			
+				<br><br>
+					
+						<center><h4>CLEARANCE </h4></center>
+			
+			19) From Hostel : 
+					
+					<br><br>
+			
+			20)From Library : 
+			
+					<br><br>
+			
+			21) Other, if any :
+				
+					<br><br>
+			
+				<center><h4>PRESENT ADDRESS </h4></center>
+				
+					<br><br>
+				<div class="row" id="add">
+				<div class="col-xs-6" id="stud">
+				<h3>Home </h3>
+				
+				Father's / Guardian's name : <input type="text" name="fathername" class="parentName">
+					<br><br>
+			
+				Correspondence address : <br>
+					<textarea> </textarea>
+			
+				<br><br>
+				
+				PIN : <input type="text" name="pin">
+			
+				<br><br>
+				
+				STD Code : <input type="text" name="std">
+				
+				<br><br>
+				
+				Telephone No. : <input type="text" name="phone">
+			
+				<br><br> 
+			
+				Mobile No.: <input type="text" name="homeMobile">
+				
+					<br><br>
+				
+				</div>
+				
+				<div class="col-xs-6">
+				<h3>Hostel</h3>
+					<br><br>
+				Hostel No. : <input type="text" name="hostel">
+					<br><br>
+				Room No. : <input type="text" name="room">
+					<br><br>
+				Mobile No. :  <input type="text" name="mobile">
+					<br><br>
+				
+				E-mail ID : <input type="email" name="email">
+					<br><br>
+				 *In case you have no Mobile No., you may quote the No. of 
+				your room-mate for our contact.
+					
+					</div>
+				
+				</div>
+			
+				<br><br>
+				
+				<p> 
+					All particulars stated in this Registration Form are true. If any information
+					given by me is found to be false at any stage, I shall be liable to any action
+					that the NIT authority may deem fit and proper.
+				
+				</p>
+				
+				<br><br>
+				
+				Date : <input type="date" > 
+					<br><br>
+				Full Name : <input type="text" name="fullname">
+				
+				<br><br>
+				
+				NB : Students may retain a Xerox copy before final submission to Academic Section.
+				
+				<hr>
+					
+			
+		</form>
+	
+	
+	</div>
+	
+</body>
+</html>
